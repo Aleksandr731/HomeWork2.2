@@ -1,5 +1,11 @@
 public class Main {
+
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        hogwarts harryPotter = new Gryffindor("78", "89",
+                "70", "90", "68");
+
+
+
     }
 }
