@@ -5,10 +5,10 @@ public class Slytherin extends hogwarts {
     private String  resourcefulness;
     private String  lustForPower;
 
-    public Slytherin(String power, String transgressionDistancepower,
+    public Slytherin(String power, String transgressionDistancePower,
                      String cunning, String determination, String ambition,
                      String resourcefulness, String lustForPower) {
-        super.Person(power, transgressionDistancepower);
+        super.Person(power, transgressionDistancePower);
         this.cunning = cunning;
         this.determination = determination;
         this.ambition = ambition;

@@ -3,9 +3,9 @@ public class Hufflepuff extends hogwarts {
     private String loyalty;
     private String honesty;
 
-    public Hufflepuff(String power, String transgressionDistancepower,
+    public Hufflepuff(String power, String transgressionDistancePower,
                        String industriousness, String loyalty, String honesty) {
-        super.Person(power, transgressionDistancepower);
+        super.Person(power, transgressionDistancePower);
         this.industriousness = industriousness;
         this.loyalty = loyalty;
         this.honesty = honesty;

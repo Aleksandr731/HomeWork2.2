@@ -4,9 +4,9 @@ public class Ravenclaw extends hogwarts {
     private String wit;
     private String creation;
 
-    public Ravenclaw(String power, String transgressionDistancepower,
+    public Ravenclaw(String power, String transgressionDistancePower,
                        String cleverness, String wisdom, String wit, String creation) {
-        super.Person(power, transgressionDistancepower);
+        super.Person(power, transgressionDistancePower);
         this.cleverness = cleverness;
         this.wisdom = wisdom;
         this.wit = wit;

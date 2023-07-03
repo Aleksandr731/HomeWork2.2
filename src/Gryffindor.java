@@ -4,9 +4,9 @@ public class Gryffindor extends hogwarts {
     private String bravery;
 
 
-    public Gryffindor(String power, String transgressionDistancepower,
+    public Gryffindor(String power, String transgressionDistancePower,
                        String nobility, String honor, String bravery) {
-        super.Person(power, transgressionDistancepower);
+        super.Person(power, transgressionDistancePower);
         this.nobility = nobility;
         this.honor = honor;
         this.bravery = bravery;

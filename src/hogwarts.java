@@ -1,10 +1,10 @@
 public class hogwarts {
     private String power;
-    private String transgressionDistancepower;
+    private String transgressionDistancePower;
 
-    public void Person(String power, String transgressionDistancepower) {
+    public void Person(String power, String transgressionDistancePower) {
         this.power = power;
-        this.transgressionDistancepower = transgressionDistancepower;
+        this.transgressionDistancePower = transgressionDistancePower;
     }
 
     public String getPower() {
@@ -16,10 +16,10 @@ public class hogwarts {
     }
 
     public String getTransgressionDistancepower() {
-        return transgressionDistancepower;
+        return transgressionDistancePower;
     }
 
     public void setTransgressionDistancepower(String transgressionDistancepower) {
-        this.transgressionDistancepower = transgressionDistancepower;
+        this.transgressionDistancePower = transgressionDistancepower;
     }
 }
