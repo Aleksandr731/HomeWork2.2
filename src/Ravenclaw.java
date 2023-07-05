@@ -1,11 +1,11 @@
 public class Ravenclaw extends hogwarts {
-    private String cleverness;
-    private String wisdom;
-    private String wit;
-    private String creation;
+    private int cleverness;
+    private int wisdom;
+    private int wit;
+    private int creation;
 
-    public Ravenclaw(String power, String transgressionDistancePower,
-                       String cleverness, String wisdom, String wit, String creation) {
+    public Ravenclaw(int power, int transgressionDistancePower,
+                     int cleverness, int wisdom, int wit, int creation) {
         super.hogwarts(power, transgressionDistancePower);
         this.cleverness = cleverness;
         this.wisdom = wisdom;
@@ -13,35 +13,35 @@ public class Ravenclaw extends hogwarts {
         this.creation = creation;
     }
 
-    public String getCleverness() {
+    public int getCleverness() {
         return cleverness;
     }
 
-    public void setCleverness(String cleverness) {
+    public void setCleverness(int cleverness) {
         this.cleverness = cleverness;
     }
 
-    public String getWisdom() {
+    public int getWisdom() {
         return wisdom;
     }
 
-    public void setWisdom(String wisdom) {
+    public void setWisdom(int wisdom) {
         this.wisdom = wisdom;
     }
 
-    public String getWit() {
+    public int getWit() {
         return wit;
     }
 
-    public void setWit(String wit) {
+    public void setWit(int wit) {
         this.wit = wit;
     }
 
-    public String getCreation() {
+    public int getCreation() {
         return creation;
     }
 
-    public void setCreation(String creation) {
+    public void setCreation(int creation) {
         this.creation = creation;
     }
 

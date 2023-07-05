@@ -1,13 +1,13 @@
 public class Slytherin extends hogwarts {
-    private String cunning;
-    private String determination;
-    private String ambition;
-    private String  resourcefulness;
-    private String  lustForPower;
+    private int cunning;
+    private int determination;
+    private int ambition;
+    private int  resourcefulness;
+    private int  lustForPower;
 
-    public Slytherin(String power, String transgressionDistancePower,
-                     String cunning, String determination, String ambition,
-                     String resourcefulness, String lustForPower) {
+    public Slytherin(int power, int transgressionDistancePower,
+                     int cunning, int determination, int ambition,
+                     int resourcefulness, int lustForPower) {
         super.hogwarts(power, transgressionDistancePower);
         this.cunning = cunning;
         this.determination = determination;
@@ -16,43 +16,43 @@ public class Slytherin extends hogwarts {
         this.lustForPower = lustForPower;
     }
 
-    public String getCunning() {
+    public int getCunning() {
         return cunning;
     }
 
-    public void setCunning(String cunning) {
+    public void setCunning(int cunning) {
         this.cunning = cunning;
     }
 
-    public String getDetermination() {
+    public int getDetermination() {
         return determination;
     }
 
-    public void setDetermination(String determination) {
+    public void setDetermination(int determination) {
         this.determination = determination;
     }
 
-    public String getAmbition() {
+    public int getAmbition() {
         return ambition;
     }
 
-    public void setAmbition(String ambition) {
+    public void setAmbition(int ambition) {
         this.ambition = ambition;
     }
 
-    public String getResourcefulness() {
+    public int getResourcefulness() {
         return resourcefulness;
     }
 
-    public void setResourcefulness(String resourcefulness) {
+    public void setResourcefulness(int resourcefulness) {
         this.resourcefulness = resourcefulness;
     }
 
-    public String getLustForPower() {
+    public int getLustForPower() {
         return lustForPower;
     }
 
-    public void setLustForPower(String lustForPower) {
+    public void setLustForPower(int lustForPower) {
         this.lustForPower = lustForPower;
     }
 
