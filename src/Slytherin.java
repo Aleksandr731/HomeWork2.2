@@ -8,7 +8,7 @@ public class Slytherin extends hogwarts {
     public Slytherin(String power, String transgressionDistancePower,
                      String cunning, String determination, String ambition,
                      String resourcefulness, String lustForPower) {
-        super.Person(power, transgressionDistancePower);
+        super.hogwarts(power, transgressionDistancePower);
         this.cunning = cunning;
         this.determination = determination;
         this.ambition = ambition;
@@ -54,5 +54,14 @@ public class Slytherin extends hogwarts {
 
     public void setLustForPower(String lustForPower) {
         this.lustForPower = lustForPower;
+    }
+
+    public String printStudent() {
+        return "Факультет: Slytherin, " +
+                "cunning='" + cunning + '\'' +
+                ", determination='" + determination + '\'' +
+                ", ambition='" + ambition + '\'' +
+                ", resourcefulness='" + resourcefulness + '\'' +
+                ", lustForPower='" + lustForPower + '\'' + printPower();
     }
 }

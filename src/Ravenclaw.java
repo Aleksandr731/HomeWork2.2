@@ -6,7 +6,7 @@ public class Ravenclaw extends hogwarts {
 
     public Ravenclaw(String power, String transgressionDistancePower,
                        String cleverness, String wisdom, String wit, String creation) {
-        super.Person(power, transgressionDistancePower);
+        super.hogwarts(power, transgressionDistancePower);
         this.cleverness = cleverness;
         this.wisdom = wisdom;
         this.wit = wit;
@@ -43,5 +43,13 @@ public class Ravenclaw extends hogwarts {
 
     public void setCreation(String creation) {
         this.creation = creation;
+    }
+
+    public String printStudent() {
+        return "Факультет: Ravenclaw, " +
+                "cleverness='" + cleverness + '\'' +
+                ", wisdom='" + wisdom + '\'' +
+                ", wit='" + wit + '\'' +
+                ", creation='" + creation + '\'' + printPower();
     }
 }

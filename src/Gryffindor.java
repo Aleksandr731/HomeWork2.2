@@ -1,38 +1,56 @@
 public class Gryffindor extends hogwarts {
-    private String nobility;
-    private String honor;
-    private String bravery;
+    private int nobility;
+    private int honor;
+    private int bravery;
 
 
-    public Gryffindor(String power, String transgressionDistancePower,
-                       String nobility, String honor, String bravery) {
-        super.Person(power, transgressionDistancePower);
+    public Gryffindor(int power, int transgressionDistancePower,
+                      int nobility, int honor, int bravery) {
+        super.hogwarts(power, transgressionDistancePower);
         this.nobility = nobility;
         this.honor = honor;
         this.bravery = bravery;
     }
 
-    public String getNobility() {
+    public int getNobility() {
         return nobility;
     }
 
-    public void setNobility(String nobility) {
+    public void setNobility(int nobility) {
         this.nobility = nobility;
     }
 
-    public String getHonor() {
+    public int getHonor() {
         return honor;
     }
 
-    public void setHonor(String honor) {
+    public void setHonor(int honor) {
         this.honor = honor;
     }
 
-    public String getBravery() {
+    public int getBravery() {
         return bravery;
     }
 
-    public void setBravery(String bravery) {
+    public void setBravery(int bravery) {
         this.bravery = bravery;
+    }
+
+    public String printStudent() {
+        return "Факультет: Gryffindor, " +
+                "nobility='" + nobility + '\'' +
+                ", honor='" + honor + '\'' +
+                ", bravery='" + bravery + '\'' + printPower();
+    }
+
+    public void bestStudent() {
+        int sumFirstStudent = getNobility() + getHonor() + getBravery() + getPower() + getTransgressionDistancepower();
+        int sumSecondStudent = getNobility() + getHonor() + getBravery() + getPower() + getTransgressionDistancepower();
+        if (sumFirstStudent < sumSecondStudent) {
+
+        }
+        {
+
+        }
     }
 }

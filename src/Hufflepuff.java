@@ -1,11 +1,11 @@
 public class Hufflepuff extends hogwarts {
-    private String industriousness;
-    private String loyalty;
-    private String honesty;
+    private int industriousness;
+    private int loyalty;
+    private int honesty;
 
-    public Hufflepuff(String power, String transgressionDistancePower,
-                       String industriousness, String loyalty, String honesty) {
-        super.Person(power, transgressionDistancePower);
+    public Hufflepuff(int power, int transgressionDistancePower,
+                      int industriousness,int loyalty, int honesty) {
+        super.hogwarts(power, transgressionDistancePower);
         this.industriousness = industriousness;
         this.loyalty = loyalty;
         this.honesty = honesty;
@@ -33,5 +33,12 @@ public class Hufflepuff extends hogwarts {
 
     public void setHonesty(String honesty) {
         this.honesty = honesty;
+    }
+
+    public String printStudent() {
+        return "Факультет: Hufflepuff, " +
+                "industriousness='" + industriousness + '\'' +
+                ", loyalty='" + loyalty + '\'' +
+                ", honesty='" + honesty + '\'' + printPower();
     }
 }

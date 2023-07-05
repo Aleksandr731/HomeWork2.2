@@ -1,25 +1,30 @@
 public class hogwarts {
-    private String power;
-    private String transgressionDistancePower;
+    private int power;
+    private int transgressionDistancePower;
 
-    public void Person(String power, String transgressionDistancePower) {
+    public void hogwarts(int power, int transgressionDistancePower) {
         this.power = power;
         this.transgressionDistancePower = transgressionDistancePower;
     }
 
-    public String getPower() {
+    public int getPower() {
         return power;
     }
 
-    public void setPower(String power) {
+    public void setPower(int power) {
         this.power = power;
     }
 
-    public String getTransgressionDistancepower() {
+    public int getTransgressionDistancepower() {
         return transgressionDistancePower;
     }
 
-    public void setTransgressionDistancepower(String transgressionDistancepower) {
+    public void setTransgressionDistancepower(int transgressionDistancepower) {
         this.transgressionDistancePower = transgressionDistancepower;
+    }
+
+    public String printPower() {
+        return ", power='" + power + '\'' +
+                ", transgressionDistancePower='" + transgressionDistancePower + '\'';
     }
 }
