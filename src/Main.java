@@ -1,6 +1,6 @@
 public class Main {
 
-    private static Gryffindor harryPoter;
+    private static Gryffindor harryPotter;
     private static Gryffindor hermioneGranger;
     private static Gryffindor ronWeasley;
     private static Slytherin dracoMalfoy;
@@ -16,7 +16,7 @@ public class Main {
     public static void main(String[] args) {
 
         hogwarts [] hogwarts = {
-                harryPoter = new Gryffindor(78, 89,
+                harryPotter = new Gryffindor(78, 89,
                         70, 90, 68),
                 hermioneGranger = new Gryffindor(72, 68,
                         43, 67, 56),
@@ -47,9 +47,15 @@ public class Main {
                 marcusBelby =  new Ravenclaw(43, 53,
                         52, 74, 36, 26),
         };
-        System.out.println("Описание студента 'Гарри Потер' - " + harryPoter.printStudent());
+        System.out.println("Описание студента 'Гарри Потер' - " + harryPotter.printStudent());
         System.out.println("Описание студента 'Драко Малфой' - " + dracoMalfoy.printStudent());
         System.out.println("Описание студента 'Захария Смит' - " + zachariahSmith.printStudent());
         System.out.println("Описание студента 'Чжоу Чанг' - " + zhouChang.printStudent());
+
+        if (harryPotter.sumProperties() > hermioneGranger.sumProperties()){
+            System.out.println("Гарри Поттер лучший Гриффиндорец, чем Гермиона");
+        } else System.out.println("Гермиона лучший Гриффиндорец, чем Гарри Поттер");
+
+
     }
 }

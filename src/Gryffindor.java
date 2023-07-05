@@ -43,14 +43,9 @@ public class Gryffindor extends hogwarts {
                 ", bravery='" + bravery + '\'' + printPower();
     }
 
-    public void bestStudent() {
-        int sumFirstStudent = getNobility() + getHonor() + getBravery() + getPower() + getTransgressionDistancepower();
-        int sumSecondStudent = getNobility() + getHonor() + getBravery() + getPower() + getTransgressionDistancepower();
-        if (sumFirstStudent < sumSecondStudent) {
-
-        }
-        {
-
-        }
+    public int sumProperties() {
+        int sum = getNobility() + getHonor() + getBravery();
+        return sum;
     }
+
 }

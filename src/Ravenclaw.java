@@ -52,4 +52,8 @@ public class Ravenclaw extends hogwarts {
                 ", wit='" + wit + '\'' +
                 ", creation='" + creation + '\'' + printPower();
     }
+    public int sumProperties() {
+        int sum = getCleverness() + getWisdom() + getWit() + getCreation();
+        return sum;
+    }
 }

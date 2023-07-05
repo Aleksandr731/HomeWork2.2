@@ -41,4 +41,8 @@ public class Hufflepuff extends hogwarts {
                 ", loyalty='" + loyalty + '\'' +
                 ", honesty='" + honesty + '\'' + printPower();
     }
+    public int sumProperties() {
+        int sum = getIndustriousness() + getLoyalty() + getHonesty();
+        return sum;
+    }
 }

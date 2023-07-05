@@ -64,4 +64,9 @@ public class Slytherin extends hogwarts {
                 ", resourcefulness='" + resourcefulness + '\'' +
                 ", lustForPower='" + lustForPower + '\'' + printPower();
     }
+    public int sumProperties() {
+        int sum = getCunning() + getDetermination() + getAmbition()
+                + getResourcefulness() + getLustForPower();
+        return sum;
+    }
 }
