@@ -1,14 +1,14 @@
-public class Slytherin extends hogwarts {
+public class Slytherin extends Hogwarts {
     private int cunning;
     private int determination;
     private int ambition;
     private int  resourcefulness;
     private int  lustForPower;
 
-    public Slytherin(int power, int transgressionDistancePower,
+    public Slytherin(String name, int power, int transgressionDistancePower,
                      int cunning, int determination, int ambition,
                      int resourcefulness, int lustForPower) {
-        super.hogwarts(power, transgressionDistancePower);
+        super(name, power, transgressionDistancePower);
         this.cunning = cunning;
         this.determination = determination;
         this.ambition = ambition;
@@ -57,16 +57,26 @@ public class Slytherin extends hogwarts {
     }
 
     public String printStudent() {
-        return "Факультет: Slytherin, " +
-                "cunning='" + cunning + '\'' +
+        return "Факультет: Slytherin, " + printPower() +
+                ", cunning='" + cunning + '\'' +
                 ", determination='" + determination + '\'' +
                 ", ambition='" + ambition + '\'' +
                 ", resourcefulness='" + resourcefulness + '\'' +
-                ", lustForPower='" + lustForPower + '\'' + printPower();
+                ", lustForPower='" + lustForPower + '\'' ;
     }
     public int sumProperties() {
         int sum = getCunning() + getDetermination() + getAmbition()
                 + getResourcefulness() + getLustForPower();
         return sum;
+    }
+
+    public void compareStudent(Slytherin slytherinStudent){
+        int sumThis = this.cunning + this.determination + this.ambition + this.resourcefulness + this.lustForPower;
+        int sumSlytherinStudent = slytherinStudent.getCunning() + slytherinStudent.getDetermination()
+                + slytherinStudent.getAmbition() + slytherinStudent.getResourcefulness()
+                + slytherinStudent.getLustForPower();
+        if (sumThis > sumSlytherinStudent) {
+            System.out.println("Драко лучший Слизериновец, чем Грэхэм");
+        } else System.out.println("Грэхэм лучший Слизериновец, чем Драко");
     }
 }

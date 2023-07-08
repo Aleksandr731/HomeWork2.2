@@ -1,11 +1,11 @@
-public class Hufflepuff extends hogwarts {
+public class Hufflepuff extends Hogwarts {
     private int industriousness;
     private int loyalty;
     private int honesty;
 
-    public Hufflepuff(int power, int transgressionDistancePower,
+    public Hufflepuff(String name, int power, int transgressionDistancePower,
                       int industriousness,int loyalty, int honesty) {
-        super.hogwarts(power, transgressionDistancePower);
+        super(name, power, transgressionDistancePower);
         this.industriousness = industriousness;
         this.loyalty = loyalty;
         this.honesty = honesty;
@@ -36,13 +36,22 @@ public class Hufflepuff extends hogwarts {
     }
 
     public String printStudent() {
-        return "Факультет: Hufflepuff, " +
-                "industriousness='" + industriousness + '\'' +
+        return "Факультет: Hufflepuff, " + printPower() +
+                ", industriousness='" + industriousness + '\'' +
                 ", loyalty='" + loyalty + '\'' +
-                ", honesty='" + honesty + '\'' + printPower();
+                ", honesty='" + honesty + '\'' ;
     }
     public int sumProperties() {
         int sum = getIndustriousness() + getLoyalty() + getHonesty();
         return sum;
+    }
+
+    public void compareStudent(Hufflepuff hufflepuffStudent){
+        int sumThis = this.industriousness + this.loyalty + this.honesty;
+        int sumHufflepuffStudent = hufflepuffStudent.getIndustriousness()
+                + hufflepuffStudent.getLoyalty() + hufflepuffStudent.getHonesty();
+        if (sumThis > sumHufflepuffStudent) {
+            System.out.println("Захария лучший Хуффендуец, чем Седрик");
+        } else System.out.println("Седрик лучший Хуффендуец, чем Захария");
     }
 }
