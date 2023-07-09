@@ -45,8 +45,8 @@ public class Ravenclaw extends Hogwarts {
         this.creation = creation;
     }
 
-    public String printStudent() {
-        return "Факультет: Ravenclaw, " + printPower() +
+    public String toString() {
+        return "Факультет: Ravenclaw, " + super.toString() +
                 ", cleverness='" + cleverness + '\'' +
                 ", wisdom='" + wisdom + '\'' +
                 ", wit='" + wit + '\'' +
@@ -62,7 +62,7 @@ public class Ravenclaw extends Hogwarts {
         int sumRavenclawStudent = ravenclawStudent.getCleverness() + ravenclawStudent.getWisdom()
                 + ravenclawStudent.getWit() + ravenclawStudent.getCreation();
         if (sumThis > sumRavenclawStudent) {
-            System.out.println("Чжоу лучший Когтевранец, чем Падма");
-        } else System.out.println("Падма лучший Когтевранец, чем Чжоу");
+            System.out.println(this.getName() + " лучший Когтевранец, чем " + ravenclawStudent.getName());
+        } else System.out.println(ravenclawStudent.getName() + " лучший Когтевранец, чем " + this.getName() );
     }
 }

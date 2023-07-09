@@ -56,8 +56,8 @@ public class Slytherin extends Hogwarts {
         this.lustForPower = lustForPower;
     }
 
-    public String printStudent() {
-        return "Факультет: Slytherin, " + printPower() +
+    public String toString() {
+        return "Факультет: Slytherin, " + super.toString() +
                 ", cunning='" + cunning + '\'' +
                 ", determination='" + determination + '\'' +
                 ", ambition='" + ambition + '\'' +
@@ -76,7 +76,7 @@ public class Slytherin extends Hogwarts {
                 + slytherinStudent.getAmbition() + slytherinStudent.getResourcefulness()
                 + slytherinStudent.getLustForPower();
         if (sumThis > sumSlytherinStudent) {
-            System.out.println("Драко лучший Слизериновец, чем Грэхэм");
-        } else System.out.println("Грэхэм лучший Слизериновец, чем Драко");
+            System.out.println(this.getName() + " лучший Слизериновец, чем " + slytherinStudent.getName());
+        } else System.out.println(slytherinStudent.getName() + " лучший Слизериновец, чем " + this.getName());
     }
 }

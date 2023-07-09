@@ -29,7 +29,7 @@ public abstract class Hogwarts {
         this.transgressionDistancePower = transgressionDistancepower;
     }
 
-    public String printPower() {
+    public String toString() {
         return  "name='" + name + '\'' + ", power='" + power + '\'' +
                 ", transgressionDistancePower='" + transgressionDistancePower + '\'';
     }
@@ -37,8 +37,8 @@ public abstract class Hogwarts {
         int sumThis = this.power + this.transgressionDistancePower;
         int sumHogwartsStudent = hogwartsStudent.getPower() + hogwartsStudent.getTransgressionDistancepower();
         if (sumThis > sumHogwartsStudent) {
-            System.out.println("Гарри обладает бОльшей мощностью магии, чем Драко");
-        } else System.out.println("Драко обладает бОльшей мощностью магии, чем Гарри");
+            System.out.println(this.name + " обладает бОльшей мощностью магии, чем " + hogwartsStudent.getName());
+        } else System.out.println(hogwartsStudent.getName() + " обладает бОльшей мощностью магии, чем " + this.name);
     }
 
 }
